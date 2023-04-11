@@ -1,0 +1,17 @@
+body{
+    background-image: url("../images/login1.png");
+    background-size: cover;
+}
+
+#log-form{
+    width:20%;
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    color:white;
+}
+
+.sign{
+    margin-left: 35%;
+}
