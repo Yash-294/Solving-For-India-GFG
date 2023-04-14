@@ -34,3 +34,6 @@ body{
     font-size: 28px;
     color: #ffffffde;
 }
+select:invalid {
+    color: gray !important;
+  }

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../css/style4.css">
     <script src="../js/index.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body >
@@ -27,28 +31,34 @@
 		<p th:if="${param.success}" class="alert alert-success hideAlert" style="width:300px;margin-top:25px;font-size:15px;text-align:center">
 			Appointment Set!! Check SMS
 		</p>
-		<div class="user_id" style="margin-left:500px;margin-top: 130px; height:390px;width:600px;">
+		<div class="user_id" style="margin-left:500px;margin-top: 20px; height:580px;width:550px;">
 			<div id="imae">
-				<span class="material-symbols-outlined" style="font-size: 70px;">
+				<span class="material-symbols-outlined" style="font-size: 80px; padding-top: 10px;">
 					local_hospital
 					</span>
+				<h2>Appointment Form</h2>
 			</div>
         	<form style="justify-content:center;margin-top:20px;" th:object="${appoint}" th:action="@{/}" method="post">
         		<div class="row" style="margin-bottom:25px;margin-left: 6px; margin-right: 12px;">
         			<div>
+						<h5 style="text-align: left; margin-bottom: 0px;margin-top: 20px;">Doctor Name</h5>
             			<input type="text" id="hiddenDocIp" style="display:none;" th:field="*{docid}" required>
             			<label for="inputDoc" class="form-label"><b></b></label>            			
-			            <select id="inputDoc" class="form-select" style="color:black;font-size:22px;border-radius: 10px; height: 45px;width: 520px;" onchange="storeDocValue()">
-			                <option selected disabled >Choose Doctor</option>
+			            <select id="inputDoc" class="form-select" required style="color:black;font-size:22px;border-radius: 10px; height: 45px;width: 475px; margin-top: -10px;" onchange="storeDocValue()">
+							
+			                <option selected disabled value="">Choose Doctor</option>
 			                <option th:each="doc:${doclist}" th:value="${doc.doc_id}" th:text="'Dr. '+${doc.firstname}+' '+${doc.lastname}"></option>
 			            </select>
             		</div>
             	</div>
-            	<div class="row" style="margin-bottom:25px;margin-left: 16.5px; margin-right: 16px;">
+				<h5 style="text-align: left; margin-bottom: 10px;margin-top: 30px;margin-left: 20px;">Patient ID</h5>
+            	<div class="row" style="margin-bottom:20px;margin-left: 16.5px; margin-right: 16px;">
+					
             			<input type="text" placeholder="Patient Aadhar No." style="color:black;font-size:22px;border-radius: 10px;border: none;height: 45px;width: 520px;" th:field="*{patid}" required>
                 </div>
-				<button class="btn btn-outline-success" style="font-size:20px;margin-top: 25px;" type="submit" >Book Appointment</button>
+				<button class="btn btn-outline-primary" style="font-size:20px;margin-top: 25px;" type="submit" >Book Appointment</button>
 			</form>
+			<h5 style="margin-top: 30px;font-family: 'Schibsted Grotesk', sans-serif;">Patient not registered? <a href="#">Register</a> Here</h5>
 		</div>
     </div>
 </body>
