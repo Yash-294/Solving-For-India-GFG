@@ -1,0 +1,68 @@
+body{
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-image: url("../images/login1.png");
+    background-size: cover;
+}
+
+.form{
+    width:70%;
+    margin-left: 15%;
+    margin-top: 1.5%;
+    padding: 25px 40px 30px 40px;
+    background-color: rgba(240, 255, 255, 0.8);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.dashitem1{
+    display: flex;
+}
+
+.dashitem2{
+    display: flex;
+}
+
+.per_disc{
+    width: 97%;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data1{
+    width: 50%;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data2{
+    width: 50%;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data3{
+    width: 50%;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data4{
+    width: 50%;
+    height: 170px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
