@@ -1,0 +1,43 @@
+body{
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-image: url("login1.png");
+    background-size: cover;
+}
+
+#log-form{
+    width:30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    padding: 30px;
+    align-items: center;
+    background-color: rgba(240, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.sign{
+    margin-left: 40%;
+}
+
+.showPass{
+    size: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+#reg{
+    text-align: center;
+}
+
+.showPass{
+    align-items: center;
+    margin-left: 30%;
+}
+
+.profile span{
+    font-size: 80px;
+    margin-left: 40%;
+}
+
+.profile h3{
+    text-align: center;
+}
